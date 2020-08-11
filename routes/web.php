@@ -24,3 +24,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/transactions/new', function(){ return view('transactions.new.start'); } );
+Route::get('/transactions/structure', function(){ return view('transactions.new.structure'); } );
